@@ -5,8 +5,8 @@ from datetime import datetime as dt
 
 
 def get_available_exchanges():
-    ex = ccxt.exchanges
-    pprint.pprint(ex)
+    exchanges = ccxt.exchanges
+    pprint.pprint(exchanges)
 
 
 def get_available_pairs_from_exchange(exchange):
