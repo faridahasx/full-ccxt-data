@@ -69,4 +69,3 @@ def get_data(symbol, exchange, timeframe, fromdate, todate):
         df2 = pd.DataFrame(data, columns=header).set_index('Timestamp')
         df2.to_csv(filename, mode='a', header=False)
         last_datetime = dt.utcfromtimestamp(last_timestamp / 1000)
-
